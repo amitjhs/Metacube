@@ -17,6 +17,7 @@ public class GoogleSearch extends BaseTest{
 	@BeforeClass
 	public void LaunchGoogleSearchPage()
 	{
+		// Comment to test Git Repository
 		google = new GoogleSearchPage(LaunchBrowser().LaunchApplication());
 		String url = Prop.GetProperty("Environment.properties", "BaseURL");
 	}
