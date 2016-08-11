@@ -12,6 +12,7 @@ public class TestFileToTestGitCommit extends BaseTest{
 
 	// This is a test file for Git Repository
 	//Again checkin
+	//Checkin number 6
 	String expectedTitle = "Metacube Software";
 	
 	GoogleSearchPage google;
