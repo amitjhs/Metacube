@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test">
+    <classes>
+      <class name="metacube.testng.webtest.GoogleSearch"/>
+      <class name="metacube.testng.spreadsheets.ExcelSheetTests"/>
+      <class name="metacube.testng.utiltest.utilitiesTest"/>
+      <class name="metacube.testng.spreadsheets.GoogleSheetTest"/>
+      <class name="metacube.testng.webtest.myfirstwebdrivertest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="metacube.testng.spreadsheets.GoogleSheetTest">
+        <methods>
+          <include name="InitClass"/>
+          <include name="InitMethod"/>
+          <include name="CloseClass"/>
+        </methods>
+      </class> <!-- metacube.testng.spreadsheets.GoogleSheetTest -->
+      <class name="metacube.testng.utiltest.utilitiesTest">
+        <methods>
+          <include name="GivenTwoUniqueRandomStringsWhenComparedShouldFailedTheTest"/>
+        </methods>
+      </class> <!-- metacube.testng.utiltest.utilitiesTest -->
+      <class name="metacube.testng.spreadsheets.ExcelSheetTests">
+        <methods>
+          <include name="InitMethod"/>
+          <include name="CloseClass"/>
+          <include name="InitClass"/>
+        </methods>
+      </class> <!-- metacube.testng.spreadsheets.ExcelSheetTests -->
+      <class name="metacube.testng.webtest.GoogleSearch">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="LaunchBrowser"/>
+          <include name="PassApplicationURL"/>
+          <include name="LaunchGoogleSearchUI"/>
+        </methods>
+      </class> <!-- metacube.testng.webtest.GoogleSearch -->
+      <class name="metacube.testng.webtest.myfirstwebdrivertest">
+        <methods>
+          <include name="PassApplicationURL"/>
+          <include name="LaunchBrowser"/>
+        </methods>
+      </class> <!-- metacube.testng.webtest.myfirstwebdrivertest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

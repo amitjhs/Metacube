@@ -1,0 +1,27 @@
+Framework Checklist
+
+Browsers
+FF
+IE
+Chrome
+
+Cloud
+BrowserStack
+
+Utilities
+ScreenShots
+Logger
+
+TestNg
+Asserts
+
+Property File
+
+Spread Sheets
+Google
+Excel
+CSV
+Open Office
+
+ReportNg
+
