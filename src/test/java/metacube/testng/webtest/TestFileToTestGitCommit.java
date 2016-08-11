@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 public class TestFileToTestGitCommit extends BaseTest{
 
+	// This is a test file for Git Repository
 	String expectedTitle = "Metacube Software";
 	
 	GoogleSearchPage google;
